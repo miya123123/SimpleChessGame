@@ -22,7 +22,7 @@
 ## 🛠 ローカル環境での実行方法
 ```bash
 git clone https://github.com/miya123123/SimpleChessGame.git
-cd SimpleChessGame/src
+cd SimpleChessGame/docs
 # 任意のWebサーバーで起動（例: Python3の場合）
 python3 -m http.server 8000
 # ブラウザで http://localhost:8000 にアクセス
