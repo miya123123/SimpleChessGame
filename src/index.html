@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptチェスゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <button id="new-game">新しいゲーム</button>
+        <button id="offer-draw">引き分けを提案</button>
+        <div id="turn-display">白のターン</div>
+    </div>
+    <div id="board"></div>
+    <div id="promotion-modal">
+        <h3>ポーンのプロモーション</h3>
+        <div id="promotion-pieces">
+            <div class="promotion-piece" data-piece="Q">♕</div>
+            <div class="promotion-piece" data-piece="R">♖</div>
+            <div class="promotion-piece" data-piece="B">♗</div>
+            <div class="promotion-piece" data-piece="N">♘</div>
+        </div>
+    </div>
+    <div id="victory-modal">
+        <h2>ゲーム終了</h2>
+        <p id="victory-message"></p>
+        <button id="new-game-victory">新しいゲームを始める</button>
+    </div>
+    <div id="draw-offer-modal">
+        <h2>引き分けの提案</h2>
+        <p id="draw-offer-message"></p>
+        <div class="modal-buttons">
+            <button id="accept-draw">承諾する</button>
+            <button id="decline-draw">拒否する</button>
+        </div>
+    </div>
+    <div id="draw-modal">
+        <h2>ゲーム終了</h2>
+        <p id="draw-message">引き分けです</p>
+        <button id="new-game-draw">新しいゲームを始める</button>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    gap: 0;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    width: 484px;
+    margin: 0 auto;
+}
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0.5px solid #8B4513;
+    box-sizing: border-box;
+}
+.white {
+    background-color: #f0d9b5;
+}
+.black {
+    background-color: #b58863;
+}
+.piece {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.piece.selected {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+#controls {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#promotion-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0d9b5;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#promotion-modal h3 {
+    margin: 0 0 15px 0;
+    text-align: center;
+    color: #333;
+}
+#promotion-pieces {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.promotion-piece {
+    font-size: 40px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b58863;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+.promotion-piece:hover {
+    background-color: #b58863 !important;
+    color: #fff !important;
+}
+.white-piece-bg {
+    background-color: #fff;
+    color: #000;
+}
+.black-piece-bg {
+    background-color: #000;
+    color: #fff;
+}
+#victory-modal, #draw-offer-modal, #draw-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0d9b5;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+#victory-modal h2, #draw-offer-modal h2, #draw-modal h2 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+#victory-modal button, #draw-offer-modal button, #draw-modal button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#victory-modal button:hover, #draw-offer-modal button:hover, #draw-modal button:hover {
+    background-color: #45a049;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#decline-draw {
+    background-color: #f44336;
+}
+#decline-draw:hover {
+    background-color: #d32f2f;
+}
