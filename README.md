@@ -17,7 +17,7 @@
   - 引き分けの提案と受諾/拒否
 
 ## 🚀 ライブデモ
-[GitHub Pages](https://miya123123.github.io/SimpleChessGame/docs/)
+[GitHub Pages](https://miya123123.github.io/SimpleChessGame)
 
 ## 🛠 ローカル環境での実行方法
 ```bash
